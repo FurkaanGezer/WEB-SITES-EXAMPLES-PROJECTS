@@ -1,0 +1,127 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: sans-serif;
+    background: url(background.jpg) center/cover no-repeat;
+    height: 100vh;
+}
+
+/* MENU BAR */
+.menu-bar{
+    background: #5b71b5;
+    text-align: center;
+}
+
+.menu-bar ul{
+    display: inline-flex;
+    list-style: none;
+}
+
+.menu-bar ul li{
+    position: relative;
+    width: 150px;
+    margin: 15px;
+    padding: 15px;
+}
+
+.menu-bar ul li a{
+    text-decoration: none;
+    color: white;
+    display: block;
+}
+
+/* ACTIVE & HOVER */
+.active,
+.menu-bar ul li:hover{
+    background: #d4c995;
+    border-radius: 10px;
+}
+
+.menu-bar .fas{
+    margin-right: 8px;
+}
+
+/* FIRST SUB MENU */
+.sub-menu-1{
+    display: none;
+    border-radius: 20px;
+    padding: 15px;
+}
+
+.menu-bar ul li:hover > .sub-menu-1{
+    display: block;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background: #5b71b5;
+    z-index: 999;
+}
+
+.sub-menu-1 ul{
+    display: block;
+}
+
+.sub-menu-1 ul li{
+    width: 150px;
+    margin: 0;
+    padding: 10px;
+    text-align: left;
+}
+
+/* SECOND SUB MENU */
+.sub-menu-2{
+    display: none;
+    border-radius: 20px;
+    padding: 15px;
+}
+
+.hover-me{
+    position: relative;
+}
+
+.hover-me:hover > .sub-menu-2{
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 150px;
+    background: #5b71b5;
+    z-index: 999;
+}
+
+/* CARET */
+.fa-caret-right{
+    float: right;
+    margin-top: 3px;
+}
+
+
+section{
+    margin: auto;
+    width: 90%;
+    padding:200px;
+}
+
+section h1{
+    font-size: 80px;
+    font-family: fantasy;
+    letter-spacing: 3px;
+    text-align: center;
+    color: white;
+    background-color: rgb(188, 143, 143,0.6);
+    padding: 30px;
+    border-radius:20px ;
+}
+
+section p{
+    margin-top: 50px;
+    font-size: 40px;
+    text-align: center;
+    letter-spacing: 3px;
+    background-color: rgba(255, 255, 255, 0.6);
+    border-radius:20px ;
+    padding: 30px;
+}

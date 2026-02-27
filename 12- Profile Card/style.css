@@ -1,0 +1,130 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    text-decoration: none;
+}
+
+
+body{
+    height: 100vh;
+    background: url("https://images.pexels.com/photos/18894577/pexels-photo-18894577/free-photo-of-view-of-the-mayon-volcano.jpeg");
+    background-size: 100% 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.profile-card{
+    width: 400px;
+    text-align: center;
+    border-radius: 8px ;
+}
+
+.card-header{
+    background: #2c3a47;
+    padding: 60px 40px;
+}
+
+.picture img{
+    display:block;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+
+.picture{
+    display: inline-block;
+    padding: 8px;
+    background: linear-gradient(130deg, #74b9ff,#e28341);
+    margin: auto;
+    border-radius: 50%;
+    animation: animation 2s linear infinite;
+    background-size: 200% 200%;
+}
+
+@keyframes animation {
+    25%{
+        background-position: left bottom;
+    }
+        50%{
+        background-position: right bottom;
+    }
+        75%{
+        background-position: right top;
+    }
+        100%{
+        background-position: left top;
+    }
+}
+
+.name{
+    color: #f2f2f2;
+    font-size: 28px;
+    font-weight: 600;
+    margin: 10px 0;
+}
+
+.desc{
+    color: #e66767;
+    font-size: 18px;
+}
+
+.sm{
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+.sm a{
+    color: #f2f2f2;
+    width: 56px;
+    transition: .3s linear;
+    font-size: 22px;
+}
+
+.sm a:hover{
+    color: #e66767;
+}
+
+
+.contact-btn{
+    display: inline-block;
+    color: #e66767;
+    border: 2px solid #f2f2f2;
+    border-radius: 6px;
+    padding: 12px 50px;
+    margin-top: 16px;
+    transition: .3s linear;
+
+}
+
+
+.contact-btn:hover{
+    background-color: #e28341;
+    color: #f2f2f2;
+}
+
+.card-footer{
+    background-color: #f4f4f4;
+    padding: 60px 10px;
+}
+
+.numbers{
+    display: flex;
+    align-items: center;
+}
+
+.item{
+    flex: 1;
+    font-size: 13px;
+}
+
+.item span{
+    display: block;
+    color: #2c3a47;
+    font-size: 30px;
+}
